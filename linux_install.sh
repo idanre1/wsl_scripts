@@ -1,4 +1,13 @@
 #!/bin/bash
+cd ~
+aptyes='sudo DEBIAN_FRONTEND=noninteractive apt-get -y '
+
+$aptyes update
+
+#Git + fetch workspace from git
+# $aptyes install git libcurl4-openssl-dev
+git clone https://github.com/idanre1/settings.git
+git clone https://github.com/idanre1/scripts.git
 
 #python
 sudo apt install python3 python-is-python3 python3-pip
